@@ -20,10 +20,10 @@ yarn add percentian
 import { Percent } from 'percentian';
 
 // From string
-const percent = Percent('500%')
+const percent = new Percent('500%')
 
 // Or from a number
-const percent = Percent(5)
+const percent = new Percent(5)
 ```
 
 ### Getting values
@@ -31,7 +31,7 @@ const percent = Percent(5)
 ```typescript
 import { Percent } from 'percentian';
 
-const percent = Percent(5)
+const percent = new Percent(5)
 
 console.log(percent.text) // 500%
 console.log(percent.rawText) // "500"
@@ -43,7 +43,7 @@ console.log(percent.number) // 5
 ```typescript
 import { Percent } from 'percentian';
 
-const percent = Percent(5)
+const percent = new Percent(5)
 
 percent.update(2)
 
